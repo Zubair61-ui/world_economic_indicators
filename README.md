@@ -2,7 +2,7 @@
 
 An exploratory data analysis of World Bank and UN development indicators for about 190 countries, built with **Python (pandas, NumPy, Matplotlib)** in Google Colab.
 
-![Population vs GDP growth](population vs GDP scatter.png.png)
+![Population vs GDP growth](Population_vs_GDP_scatter.png)
 
 ---
 
@@ -48,7 +48,7 @@ Python 3, pandas, NumPy, Matplotlib, SciPy (used for a significance test), Googl
 - **Faster population growth did not mean faster income growth per person:** ρ = -0.21 between population growth and GDP per capita growth, unchanged when population growth was measured from population density (agreement with the derived population series: ρ = 0.999).
 - The fastest per-capita growers (China, Vietnam, plus post-communist economies such as Poland and Romania) mostly had slow population growth.
 
-![Population vs GDP growth](population vs GDP scatter.png)
+![Population vs GDP growth](Population_vs_GDP_scatter.png)
 
 ### Q2: HDI growth by region (2000-2021)
 | Region | Countries | Avg HDI gain | Gain vs expected from starting level |
@@ -65,7 +65,7 @@ Python 3, pandas, NumPy, Matplotlib, SciPy (used for a significance test), Googl
 - **Most of this is catch-up:** starting HDI and gain are strongly negatively correlated (ρ = -0.53). After adjusting, Sub-Saharan Africa's advantage disappears, South Asia keeps a small edge, and Latin America & Caribbean falls slightly short.
 - The largest individual gains were Ethiopia, Angola, Rwanda, China and Bangladesh. Syria, Yemen and Libya had almost no gain, which pulls down the Middle East & North Africa average.
 
-![Average HDI gain by region](regional HDI gain bars.png)
+![Average HDI gain by region](regional_HDI_gain_bars.png)
 
 ### Q3: Correlates of life expectancy (2014)
 | Factor | Spearman ρ |
@@ -83,7 +83,7 @@ Python 3, pandas, NumPy, Matplotlib, SciPy (used for a significance test), Googl
 - The strong factors overlap heavily (for example, internet use and GDP per capita correlate about 0.9 with each other, and infant mortality and birth rate also about 0.9, in the 2015 check), so they largely measure one overall development dimension.
 - Infant mortality is partly built into life expectancy at birth, so that correlation is partly definitional.
 
-![Correlation with life expectancy](correlation bars.png)
+![Correlation with life expectancy](correlation_bars.png)
 
 ### Q4: High vs Low income countries (2014)
 | Indicator | Low income (median) | High income (median) | Separation score |
@@ -104,7 +104,7 @@ Python 3, pandas, NumPy, Matplotlib, SciPy (used for a significance test), Googl
 - GDP per capita also separates the groups perfectly but is excluded as **circular**: income groups are defined by income.
 - Electricity use rests on only 13 low income countries.
 
-![Indicators by income group](indicator boxplots.png)
+![Indicators by income group](indicator_boxplots.png)
 
 ## Data Cleaning Log
 
